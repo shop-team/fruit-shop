@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Fruit-Api/Fruit-Api.iml" filepath="$PROJECT_DIR$/Fruit-Api/Fruit-Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fruit-Common/Fruit-Common.iml" filepath="$PROJECT_DIR$/Fruit-Common/Fruit-Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fruit-Manager/Fruit-Manager.iml" filepath="$PROJECT_DIR$/Fruit-Manager/Fruit-Manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fruit-Permission/Fruit-Permission.iml" filepath="$PROJECT_DIR$/Fruit-Permission/Fruit-Permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fruit-Starter/Fruit-Starter.iml" filepath="$PROJECT_DIR$/Fruit-Starter/Fruit-Starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fruit-Wxpay/Fruit-Wxpay.iml" filepath="$PROJECT_DIR$/Fruit-Wxpay/Fruit-Wxpay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FruitShop.iml" filepath="$PROJECT_DIR$/FruitShop.iml" />
+    </modules>
+  </component>
+</project>

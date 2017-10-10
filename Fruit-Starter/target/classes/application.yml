@@ -1,0 +1,32 @@
+#服务端口
+server:
+  port: 8081
+
+#spring 基础配置
+spring:
+
+  application:
+      name: springlost
+
+  profiles:
+    active: dev
+
+
+  # HTTP ENCODING
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+    converters:
+      preferred-json-mapper: gson #json格式化方式
+
+
+
+
+
+
+
+
+

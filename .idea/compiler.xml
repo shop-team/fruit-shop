@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Fruit-Api" />
+        <module name="Fruit-Common" />
+        <module name="Fruit-Manager" />
+        <module name="Fruit-Permission" />
+        <module name="Fruit-Starter" />
+        <module name="Fruit-Wxpay" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Fruit-Api" target="1.8" />
+      <module name="Fruit-Common" target="1.8" />
+      <module name="Fruit-Manager" target="1.8" />
+      <module name="Fruit-Permission" target="1.8" />
+      <module name="Fruit-Starter" target="1.8" />
+      <module name="Fruit-Wxpay" target="1.8" />
+      <module name="FruitShop" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Fruit-Api:war">
+    <output-path>$PROJECT_DIR$/Fruit-Api/target</output-path>
+    <root id="archive" name="Fruit-Api-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Fruit-Api:war exploded" />
+    </root>
+  </artifact>
+</component>
