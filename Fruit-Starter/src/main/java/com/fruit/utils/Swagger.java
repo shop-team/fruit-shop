@@ -1,4 +1,4 @@
-package com.fruit.api.utils;
+package com.fruit.utils;
 
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.context.annotation.Bean;

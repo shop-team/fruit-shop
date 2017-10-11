@@ -1,4 +1,4 @@
-package com.fruit.api.model;
+package com.fruit.utils;
 
 import javax.persistence.*;
 import java.util.Date;

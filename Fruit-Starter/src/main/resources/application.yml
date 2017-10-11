@@ -1,26 +1,17 @@
 #服务端口
 server:
   port: 8081
-
 #spring 基础配置
 spring:
-
   application:
-      name: springlost
-
+   name: fruit-shop
   profiles:
-    active: dev
-
-
-  # HTTP ENCODING
+   active: dev
   http:
     encoding:
-      charset: utf-8
-      enabled: true
-      force: true
+      charset: UTF-8
 
-    converters:
-      preferred-json-mapper: gson #json格式化方式
+
 
 
 

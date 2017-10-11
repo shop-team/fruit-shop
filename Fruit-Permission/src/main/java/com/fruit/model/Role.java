@@ -1,4 +1,4 @@
-package com.fruit.api.model;
+package com.fruit.model;
 
 
 
