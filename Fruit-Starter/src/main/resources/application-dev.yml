@@ -1,9 +1,20 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql:///test?useUnicode=true&useSSL=false&autoReconnect=true&createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/test
     username: root
     password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop
+
+
 #    type: com.zaxxer.hikari.HikariDataSource
 #    max-total: 20
 #    max-idle: 8
@@ -23,14 +34,9 @@ spring:
 #    #打开PSCache，并且指定每个连接上PSCache的大小
 #    pool-prepared-statements: true
 #    max-open-prepared-statements: 20
-
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-logging:
-  file: log.log
-  path: D://
+#logging:
+#  file: log.log
+#  path: D://
 
 
 

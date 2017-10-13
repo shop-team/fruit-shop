@@ -1,23 +1,7 @@
 #服务端口
 server:
   port: 8081
-#spring 基础配置
 spring:
-  application:
-   name: fruit-shop
   profiles:
-   active: dev
-  http:
-    encoding:
-      charset: UTF-8
-
-
-
-
-
-
-
-
-
-
-
+    active: dev
+#spring 基础配置
