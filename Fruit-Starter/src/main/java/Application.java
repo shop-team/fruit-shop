@@ -7,6 +7,7 @@
  * @create 2017-09-29 16:56
  **/
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -24,6 +25,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableConfigurationProperties
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 @ComponentScan(basePackages= "com.fruit")
+@MapperScan("com.fruit.*.dao")
 @EnableSwagger2
 public class Application {
     public static void main(String[] args) {
