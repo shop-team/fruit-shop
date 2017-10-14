@@ -1,4 +1,4 @@
-package com.fruit.model;
+package com.fruit.permission.model;
 
 import javax.persistence.*;
 
@@ -8,19 +8,14 @@ import javax.persistence.*;
  * @author 张进
  * @create 2017-10-06 10:25
  **/
-@Entity
-@Table(name = "role_permission")
+
 public class RolePermission {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id",nullable = false,unique = true)
+
     private Long id;
 
-    @Column(name = "role_id",nullable = false)
     private Long roleId;
 
-    @Column(name = "permission_id",nullable = false)
     private Long permissionId;
 
     public Long getId() {

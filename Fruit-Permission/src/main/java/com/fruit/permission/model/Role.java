@@ -1,4 +1,4 @@
-package com.fruit.model;
+package com.fruit.permission.model;
 
 
 
@@ -14,27 +14,19 @@ import java.sql.Date;
  * @author 张进
  * @create 2017-10-06 9:49
  **/
-@Entity
-@Table(name = "role")
 public class Role {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id",nullable = false,unique = true)
+
     private Long id;
 
-    @Column(name = "role_name",nullable = false)
     private String roleName;
 
     //角色状态 0正常 1锁定  2删除
-    @Column(name = "role_status",nullable = false)
     private int roleStatus = SysConstants.STATUS_NORMAL;
 
-    @Column(name = "create_time",nullable = false)
-    @Temporal(TemporalType.DATE)
+
     private Date createTime;
 
-    @Column(name = "role_remark")
     private String roleRemark;
 
     public Long getId() {

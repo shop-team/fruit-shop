@@ -1,6 +1,7 @@
-package com.fruit.model;
+package com.fruit.permission.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -9,31 +10,24 @@ import java.util.Date;
  * @author 张进
  * @create 2017-10-06 10:21
  **/
-@Entity
-@Table(name = "permission")
-public class Permission {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id",nullable = false,unique = true)
-    private Long  id;
 
-    @Column(name = "permission_name",nullable = false)
+public class Permission implements Serializable{
+
+    private int  id;
+
     private String permissionName;
 
-    @Column(name = "permission_url",nullable = false)
     private String permissionUrl;
 
-    @Column(name = "permission_remark")
     private String permissionRemark;
 
-    @Column(name = "create_time",nullable = false)
     private Date createTime;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

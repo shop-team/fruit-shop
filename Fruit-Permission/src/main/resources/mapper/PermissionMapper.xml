@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fruit.permission.dao.PermissionMapper">
+
+    <resultMap id="BaseResultMap" type="com.fruit.permission.model.Permission">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="permission_name" property="permissionName" javaType="VARCHAR"/>
+        <result column="permission_Url" property="permissionUrl" javaType="VARCHAR"/>
+        <result column="permission_remark" property="permissionRemark" javaType="VARCHAR"/>
+        <result column="create_time" property="createTime" javaType="TIMESTAMP"/>
+    </resultMap>
+    
+    <select id="query"
+</mapper>
