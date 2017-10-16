@@ -1,7 +1,7 @@
 package com.fruit.permission.model;
 
 
-import cpm.fruit.utils.SysConstants;
+import com.fruit.utils.SysConstants;
 import java.sql.Date;
 
 /**
