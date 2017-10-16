@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: admin
     type: com.alibaba.druid.pool.DruidDataSource
@@ -23,10 +23,6 @@ spring:
     #打开PSCache，并且指定每个连接上PSCache的大小
     pool-prepared-statements: true
     max-open-prepared-statements: 20
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  config-location: classpath:mybatis-config.xml
-  type-aliases-package : com.fruit
 #logging:
 #  file: log.log
 #  path: D://

@@ -23,6 +23,7 @@ public class Permission implements Serializable{
 
     private Date createTime;
 
+
     public int getId() {
         return id;
     }

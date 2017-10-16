@@ -4,13 +4,18 @@
 
     <resultMap id="BaseResultMap" type="com.fruit.permission.model.Permission">
         <id column="id" property="id" jdbcType="INTEGER"/>
-        <result column="permission_name" property="permissionName" javaType="VARCHAR"/>
-        <result column="permission_Url" property="permissionUrl" javaType="VARCHAR"/>
-        <result column="permission_remark" property="permissionRemark" javaType="VARCHAR"/>
-        <result column="create_time" property="createTime" javaType="TIMESTAMP"/>
+        <result column="permission_name" property="permissionName" jdbcType="VARCHAR"/>
+        <result column="permission_Url" property="permissionUrl" jdbcType="VARCHAR"/>
+        <result column="permission_remark" property="permissionRemark" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
     </resultMap>
     
     <select id="query" resultMap="BaseResultMap">
         select * FROM permission
     </select>
+
+    <insert id="insertPermission" parameterType="com.fruit.permission.model.Permission" keyProperty="id" useGeneratedKeys="true">
+        insert into permission(permission_name,permission_url,permission_remark,create_time)
+        VALUES (#{permissionName},#{permissionUrl},#{permissionRemark},#{createTime})
+    </insert>
 </mapper>
