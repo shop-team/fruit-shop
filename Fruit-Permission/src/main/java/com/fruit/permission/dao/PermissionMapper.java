@@ -1,5 +1,7 @@
 package com.fruit.permission.dao;
 
+import com.fruit.permission.model.Permission;
+import com.sun.tools.javac.util.List;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -10,4 +12,9 @@ import org.springframework.stereotype.Repository;
  **/
 @Repository
 public interface PermissionMapper {
+    /**
+     * 查询权限
+     * @return
+     */
+    List<Permission> query();
 }

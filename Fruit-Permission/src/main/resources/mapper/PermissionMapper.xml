@@ -10,5 +10,7 @@
         <result column="create_time" property="createTime" javaType="TIMESTAMP"/>
     </resultMap>
     
-    <select id="query"
+    <select id="query" resultMap="BaseResultMap">
+        select * FROM permission
+    </select>
 </mapper>

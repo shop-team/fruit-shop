@@ -21,7 +21,7 @@ public class Role {
 
     private String roleName;
 
-    //角色状态 0正常 1锁定  2删除
+    /**角色状态 0正常 1锁定  2删除*/
     private int roleStatus = SysConstants.STATUS_NORMAL;
 
 

@@ -15,19 +15,19 @@ public class User {
 
     private int id;
 
-    //用户名称
+    /**用户名称*/
     private String userName;
 
-    //密码
+    /**密码*/
     private String password;
 
-    //用户类型
+    /**用户类型*/
     private String userType;
 
-    //账户状态 0正常  1锁定  2删除
+    /**账户状态 0正常  1锁定  2删除*/
     private int userStatus = SysConstants.STATUS_NORMAL;
 
-    //创建时间
+    /**创建时间*/
     private Date creteTime;
 
     public int getId() {

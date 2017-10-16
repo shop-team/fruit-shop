@@ -24,24 +24,6 @@ public class Swagger {
 
     @Bean
     public Docket createRestApi() {
-//        Predicate<RequestHandler> predicate = new Predicate<RequestHandler>() {
-//            public boolean test(RequestHandler input) {
-//                Class<?> declaringClass = input.declaringClass();
-//                // 排除BasicError
-//                 if (declaringClass == BasicErrorController.class) {
-//                     return false;
-//                 }
-//                // 被注解的类(被注释了RestController、Controller)
-//                if (declaringClass.isAnnotationPresent(RestController.class) || declaringClass.isAnnotationPresent(Controller.class)) {
-//                    return true;
-//                }
-//                // 被注解的方法
-//                if (input.isAnnotatedWith(ResponseBody.class)) {
-//                    return true;
-//                }
-//                return false;
-//            }
-//        };
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
