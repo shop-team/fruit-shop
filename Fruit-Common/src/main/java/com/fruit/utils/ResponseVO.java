@@ -11,42 +11,41 @@ import java.util.HashMap;
  * @create 2017-10-16 20:07
  **/
 public class ResponseVO {
-    int status;
-    String message;
-    Object data;
+	int status;
+	String message;
+	Object data;
 
-    public ResponseVO(int status,String message,Object data) {
-        this.data = data;
-        this.status = status;
-        this.message = message;
-    }
+	public ResponseVO(int status, String message, Object data) {
+		this.data = data;
+		this.status = status;
+		this.message = message;
+	}
 
-    public Object getData() {
-        return this.data;
-    }
+	public Object getData() {
+		return this.data;
+	}
 
-    public void setData(Object data) {
-        this.data = data;
-    }
+	public void setData(Object data) {
+		this.data = data;
+	}
 
-    public String getMessage() {
-        return this.message;
-    }
+	public String getMessage() {
+		return this.message;
+	}
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
-    public int getStatus() {
-        return this.status;
-    }
+	public int getStatus() {
+		return this.status;
+	}
 
-    public void setStatus(int status) {
-        this.status = status;
-    }
+	public void setStatus(int status) {
+		this.status = status;
+	}
 
-    public static String error(int status, String msg) {
-        return JSON.toJSONString(new ResponseVO(status, msg, new HashMap<>(0)));
-    }
-
+	public static String error(int status, String msg) {
+		return JSON.toJSONString(new ResponseVO(status, msg, new HashMap<>(0)));
+	}
 }

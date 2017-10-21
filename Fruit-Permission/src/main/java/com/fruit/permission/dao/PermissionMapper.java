@@ -14,16 +14,18 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface PermissionMapper {
-    /**
-     * 查询权限
-     * @return
-     */
-    List<Permission> query();
+	/**
+	 * 查询权限
+	 * 
+	 * @return
+	 */
+	List<Permission> query();
 
-    /**
-     * 插入数据
-     * @param permission
-     * @return
-     */
-    int insertPermission(Permission permission);
+	/**
+	 * 插入数据
+	 * 
+	 * @param permission
+	 * @return
+	 */
+	int insertPermission(Permission permission);
 }

@@ -2,7 +2,6 @@ package com.fruit.permission.service;
 
 import com.fruit.permission.dao.PermissionMapper;
 import com.fruit.permission.model.Permission;
-import com.fruit.utils.ResponseVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,12 +14,11 @@ import org.springframework.transaction.annotation.Transactional;
  **/
 @Service
 public class PermissionService {
-    @Autowired
-    PermissionMapper permissionMapper;
+	@Autowired
+	PermissionMapper permissionMapper;
 
-    @Transactional(readOnly = false,rollbackFor = Exception.class)
-    public int insertPermission(Permission permission){
-        return  permissionMapper.insertPermission(permission);
-    }
-
+	@Transactional(readOnly = false, rollbackFor = Exception.class)
+	public int insertPermission(Permission permission) {
+		return permissionMapper.insertPermission(permission);
+	}
 }
