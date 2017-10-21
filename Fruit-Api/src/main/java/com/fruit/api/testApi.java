@@ -15,35 +15,33 @@ import java.util.Date;
 
 /**
  * ${DESCRIPTION}
+ * 
  * @author 张进
  * @create 2017-09-29 17:04
  **/
-
 @RestController
 @RequestMapping("/api/test")
 @Api(value = "测试swagger")
 public class testApi {
-    @Autowired
-    PermissionService service;
+	@Autowired
+	PermissionService service;
 
-    @GetMapping(value = "/test1")
-    @ApiOperation(value = "测试接口1",notes = "测试说明1")
-    public String test1(){
-        int a = 100/0;
-        return null;
-    }
+	@GetMapping(value = "/test1")
+	@ApiOperation(value = "测试接口1", notes = "测试说明1")
+	public String test1() {
+		int a = 100 / 0;
+		return String.valueOf(a);
+	}
 
-
-    @GetMapping(value = "/testErro")
-    @ApiOperation(value = "测试错误",notes = "测试全局异常")
-    public ResponseVO te(){
-        Permission permission = new Permission();
-        permission.setCreateTime(new Date());
-        permission.setPermissionName("测试");
-        permission.setPermissionRemark("秒杀");
-        permission.setPermissionUrl("/rul");
-        int a = service.insertPermission(permission);
-       return new ResponseVO(SysConstants.STATUS_NORMAL,"插入成功",a);
-    }
+	@GetMapping(value = "/testError")
+	@ApiOperation(value = "测试错误", notes = "测试全局异常")
+	public ResponseVO testError() {
+		Permission permission = new Permission();
+		permission.setCreateTime(new Date());
+		permission.setPermissionName("测试");
+		permission.setPermissionRemark("秒杀");
+		permission.setPermissionUrl("/rul");
+		int a = service.insertPermission(permission);
+		return new ResponseVO(SysConstants.STATUS_NORMAL, "插入成功", a);
+	}
 }
-
