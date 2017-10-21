@@ -7,8 +7,11 @@ package com.fruit.permission.model;
  * @create 2017-10-06 9:47
  **/
 public class UserRole {
+	
 	private Long id;
+	
 	private Long userId;
+	
 	private Long roleId;
 
 	public Long getId() {
