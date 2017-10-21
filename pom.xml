@@ -13,7 +13,7 @@
         <module>Fruit-Permission</module>
         <module>Fruit-Wxpay</module>
         <module>Fruit-Starter</module>
-    <module>Fruit-Product</module>
+    	<module>Fruit-Product</module>
   </modules>
     <!-- 定义SpringBoot 版本-->
     <parent>
